@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://unpkg.com/flickity@2/dist/flickity.min.css' }
     ]
   },
   /*
@@ -34,7 +35,7 @@ module.exports = {
         })
       }
     },
-    vendor: ['rellax']
+    vendor: ['rellax', 'flickity']
   },
   css: [
     '@/assets/css/main.css'

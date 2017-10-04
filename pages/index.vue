@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="carousel">
-        carousel placeholder
+        <testimonial-carousel/>
       </div>
       <div class="clients-candidates">
           <div class="candidates">
@@ -52,10 +52,10 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import Rellax from 'rellax'
-
+import TestimonialCarousel from '~/components/TestimonialCarousel.vue'
 export default {
   components: {
-    Logo
+    Logo, TestimonialCarousel
   },
   data () {
     return {
