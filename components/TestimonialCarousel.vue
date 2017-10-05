@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <div v-for="(testimonial, index) in testimonials" :key="index">
-      <testimonial-item :testimonial="testimonial" cellSelector="testimonialCell"/>
-    </div>
+  <div class="testimonials">
+    <testimonial-item
+      v-for="(testimonial, index) in testimonials"
+      :key="index"
+      :testimonial="testimonial" 
+      ></testimonial-item>
   </div>
 </template>
 
@@ -14,7 +16,6 @@ export default {
   data () {
     return {
       options: {
-        cellSelector: '[data-cell="testimonialCell"]',
         wrapAround: true
       },
       testimonials: [
@@ -48,7 +49,6 @@ export default {
   },
   mounted () {
     if (process.browser) {
-      console.log(this.$el)
       const Flickity = require('flickity')
       const flickity = () => new Flickity(this.$el, this.options)
       flickity()
@@ -57,3 +57,25 @@ export default {
 }
 </script>
 
+<style>
+  .testimonials {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonials .flickity-prev-next-button {
+    background-color: transparent;
+    display: none;
+  }
+
+  @media (min-width: 1000px) {
+    .testimonials .flickity-prev-next-button {
+      display: block;
+    }
+
+    .testimonials .flickity-page-dots {
+      display: none;
+    }
+  }
+</style>

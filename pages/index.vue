@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .site-content {
     position: relative;
     min-height: 100vh;

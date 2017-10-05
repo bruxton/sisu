@@ -23,3 +23,22 @@ p {
 	margin-bottom: 1em;
 	margin-top: 0;
 }
+
+/* white circles */
+
+.flickity-page-dots {
+	bottom: -50px;
+}
+
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid black;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: black;
+}
