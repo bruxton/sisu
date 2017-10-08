@@ -41,9 +41,7 @@
         </div>
       </div>
     </main>
-    <div class="cover">
-      <h1 class="title">SISU</h1>
-    </div>
+    <overlay/>
     <logo :style="topTriangleStyles"/>
     <logo :style="bottomTriangleStyles"/>
   </div>
@@ -51,11 +49,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Overlay from '~/components/Overlay.vue'
 import Rellax from 'rellax'
 import TestimonialCarousel from '~/components/TestimonialCarousel.vue'
 export default {
   components: {
-    Logo, TestimonialCarousel
+    Logo, TestimonialCarousel, Overlay
   },
   data () {
     return {
@@ -81,138 +80,100 @@ export default {
 </script>
 
 <style scoped>
-  .site-content {
-    position: relative;
-    min-height: 100vh;
-    background-color: #FFFFFF;
-    z-index: 10;
-    margin-top: 100vh;
-    margin-bottom: 100vh;
-  }
-  .container {
-    max-width: 870px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .cover {
-    height: 100vh;
-    background-color: #000000;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
+.site-content {
+  position: relative;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+  z-index: 10;
+  margin-top: 100vh;
+  margin-bottom: 100vh;
+}
 
-  .tagline {
-    padding-bottom: 2.5em;
-    font-size: 2.1875em;
-    font-weight: bold;
-    padding-top: 3.75em;
-  }
+.container {
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  .carousel {
-    background-color: #EFEFEF;
-    /* position: relative;
-    z-index: 10; */
-    padding-top: 5em;
-    padding-bottom: 5em;
-    text-align: center;
-  }
+.tagline {
+  padding-bottom: 2.5em;
+  font-size: 2.1875em;
+  font-weight: bold;
+  padding-top: 3.75em;
+}
 
-  .clients-candidates {
-    position: relative;
-    background-color: #FFF;
-    overflow: hidden;
-    font-size: 1.75em;
-    font-weight: bold;
-  }
+.carousel {
+  background-color: #EFEFEF;
+  /* position: relative;
+  z-index: 10; */
+  padding-top: 5em;
+  padding-bottom: 5em;
+  text-align: center;
+}
 
-  .candidates {
-    position: relative;
-    /* transform: skewY(-28deg); */
-    overflow: hidden;
-  }
-  
+.clients-candidates {
+  position: relative;
+  background-color: #FFF;
+  overflow: hidden;
+  font-size: 1.75em;
+  font-weight: bold;
+}
 
-  .candidates > div {
-    /* transform: skewY(28deg); */
-  }
+.candidates {
+  position: relative;
+  /* transform: skewY(-28deg); */
+  overflow: hidden;
+}
 
-  .candidates .container {
-    padding-right: 25%;
-  }
+.candidates .container {
+  padding-right: 25%;
+}
 
-  .clients {
-    position: relative;
-    transform: skewY(-28deg);
-    border-top: 13px solid #000;
-    overflow: hidden;
-    z-index: 20;
-    background-color: white;
-    margin-bottom: -10%;
-  }
+.clients {
+  position: relative;
+  transform: skewY(-28deg);
+  border-top: 13px solid #000;
+  overflow: hidden;
+  z-index: 20;
+  background-color: white;
+  margin-bottom: -10%;
+}
 
-  .clients > div {
-    transform: skewY(28deg);
-  }
+.clients > div {
+  transform: skewY(28deg);
+}
 
-  .clients .container {
-    position: relative;
-    padding-left: 25%;
-    /* bottom: -20px; */
-  }
+.clients .container {
+  position: relative;
+  padding-left: 25%;
+}
 
-  .clients__border {
-    /* position: absolute;
-    top: 0;
-    height: 200px;
-    width: 100%;
-    background-color: red;
-    border-top: 13px solid #000;
-    transform: skewY(-28deg); */
-    /* transform-origin: 80% center; */
-  }
+.tagline__copy:last-of-type {
+  margin-bottom: 0;
+}
 
-  .tagline__copy:last-of-type {
-    margin-bottom: 0;
-  }
+.another-thing {
+  margin-bottom: 100vh;
+  z-index: 10;
+  position: relative;
+  background-color: #fff;
+}
 
-  .another-thing {
-    margin-bottom: 100vh;
-    z-index: 10;
-    position: relative;
-    background-color: #fff;
-  }
+.logo__bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
 
-  .title {
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-    font-size: 5em;
-    letter-spacing: 40px;
-  }
+.logo__top {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
 
-  .logo__bottom {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-  }
-
-  .logo__top {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-  }
-
-  .logo__top svg {
-    transform: rotate(180deg);
-  }
+.logo__top svg {
+  transform: rotate(180deg);
+}
 </style>
