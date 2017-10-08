@@ -16,7 +16,8 @@ export default {
   data () {
     return {
       options: {
-        wrapAround: true
+        wrapAround: true,
+        arrowShape: 'M0,0 L0,31.9712324 C0,37.7216978 4.67588349,42.4024218 10.4263489,42.4024218 C4.67588349,42.4024218 0,47.0783053 0,52.8239302 L0,84.8000031 L79.9982676,42.4024218 L0,0 Z'
       },
       testimonials: [
         {
@@ -67,6 +68,18 @@ export default {
   .testimonials .flickity-prev-next-button {
     background-color: transparent;
     display: none;
+  }
+
+  .testimonials .flickity-prev-next-button svg {
+    transform: rotate(180deg);
+  }
+
+  .flickity-prev-next-button.previous {
+    left: 0;
+  }
+
+  .flickity-prev-next-button.next {
+    right: 0;
   }
 
   @media (min-width: 1000px) {
