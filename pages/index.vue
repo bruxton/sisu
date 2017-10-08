@@ -52,6 +52,7 @@ import Logo from '~/components/Logo.vue'
 import Overlay from '~/components/Overlay.vue'
 import Rellax from 'rellax'
 import TestimonialCarousel from '~/components/TestimonialCarousel.vue'
+
 export default {
   components: {
     Logo, TestimonialCarousel, Overlay
