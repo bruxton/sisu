@@ -72,9 +72,17 @@ export default {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 5em;
-  letter-spacing: 40px;
-  text-indent: 40px;
+  font-size: 3em;
+  letter-spacing: .6875em;
+  text-indent: .6875em;
+}
+
+@media (min-width: 500px) {
+  .title {
+    font-size: 5em;
+    letter-spacing: 40px;
+    text-indent: 40px;
+  }
 }
 
 .overlay__email {

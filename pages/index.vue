@@ -19,7 +19,7 @@
             <div>
               <div class="rellax-candidates" data-rellax-percentage=".5" data-rellax-speed="5">
                 <div class="container">
-                  <h2>CANDIDATES</h2>
+                  <h2 class="clients-candidates__header">Candidates</h2>
                   <p>Finding the right company and job is incredibly stressful....that’s where we come in with industry knowledge to find you the right home. Your SISU personal recruiter will make each interaction relevant to your needs. We focus on your interests, hobbies, passions, and life-goals.</p>
                   <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.</p>
                   <p style="margin-bottom: 0">Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -27,14 +27,15 @@
               </div>
             </div>
           </div>
-          <div class="clients" >
+          <div class="clients-candidates__small-border" role="presentation">&nbsp;</div>
+          <div class="clients">
             <div>
               <div class="rellax-clients" data-rellax-percentage=".5" data-rellax-speed="5">
                 <div class="container">
-                  <h2>Clients</h2>
+                  <h2 class="clients-candidates__header">Clients</h2>
                   <p>Gifted talent will always have a wealth of compelling opportunities—we work behind the scenes and present you with the most curated talent. Using our communication and honesty first approach, we successfully pair great engineers with your culture.</p>
                   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <p style="margin-bottom: 45%;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Cras sagittis finibus massa quis pretium. Aliquam maximus dui in lacus commodo, eget facilisis nunc ultricies.</p>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Cras sagittis finibus massa quis pretium. Aliquam maximus dui in lacus commodo, eget facilisis nunc ultricies.</p>
               </div>
             </div>
           </div>
@@ -119,38 +120,90 @@ export default {
   position: relative;
   background-color: #FFF;
   overflow: hidden;
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: bold;
+  padding-top: 3.75em;
   z-index: 1;
+}
+
+@media (min-width: 800px) {
+  .clients-candidates {
+    font-size: 1.75em;
+    padding-top: 0;
+  }
+}
+
+.clients-candidates__header {
+  font-size: .8125em;
+  margin-bottom: 1.25em;
+  text-transform: uppercase;
+}
+
+.clients-candidates__small-border {
+  max-width: 65px;
+  height: 4px;
+  background-color: #000000;
+  border-radius: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  transform: skewY(-28deg);
+}
+
+@media (min-width: 1024px) {
+  .clients-candidates__small-border {
+    display: none;
+  }
 }
 
 .candidates {
   position: relative;
-  /* transform: skewY(-28deg); */
+  margin-bottom: 3.75em;
   overflow: hidden;
 }
 
-.candidates .container {
-  padding-right: 25%;
+@media (min-width: 1024px) {
+  .candidates {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .candidates .container {
+    padding-right: 25%;
+  }
 }
 
 .clients {
   position: relative;
-  transform: skewY(-28deg);
-  border-top: 13px solid #000;
-  overflow: hidden;
   z-index: 20;
   background-color: white;
   margin-bottom: -10%;
 }
 
 .clients > div {
-  transform: skewY(28deg);
+  margin-top: 70px;
 }
 
-.clients .container {
-  position: relative;
-  padding-left: 25%;
+@media (min-width: 1024px) {
+  .clients {
+    border-top: 13px solid #000;
+    overflow: hidden;
+    transform: skewY(-28deg);
+  }
+
+  .clients > div {
+    margin-top: 0;
+    transform: skewY(28deg);
+  }
+
+  .clients .container {
+    position: relative;
+    padding-left: 25%;
+  }
+
+  .clients .container p:last-of-type {
+    padding-bottom: 45%;
+  }
 }
 
 .tagline__copy:last-of-type {
@@ -178,5 +231,12 @@ export default {
 
 .logo__top svg {
   transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) { 
+  .rellax-clients, 
+  .rellax-candidates { 
+    transform: translate3d(0,0,0) !important; 
+  } 
 }
 </style>
