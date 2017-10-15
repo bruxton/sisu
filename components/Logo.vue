@@ -15,6 +15,6 @@ export default {
   svg {
     mix-blend-mode: difference;
     position: fixed;
-    z-index: 10;
+    z-index: 1;
   }
 </style>

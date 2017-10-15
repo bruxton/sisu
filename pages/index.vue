@@ -84,8 +84,6 @@ export default {
 .site-content {
   position: relative;
   min-height: 100vh;
-  background-color: #FFFFFF;
-  z-index: 10;
   margin-top: 100vh;
   margin-bottom: 100vh;
 }
@@ -99,16 +97,19 @@ export default {
 }
 
 .tagline {
-  padding-bottom: 2.5em;
+  background-color: #fff;
   font-size: 2.1875em;
   font-weight: bold;
   padding-top: 3.75em;
+  padding-bottom: 2.5em;
+  position: relative;
+  z-index: 1;
 }
 
 .carousel {
   background-color: #EFEFEF;
-  /* position: relative;
-  z-index: 10; */
+  position: relative;
+  z-index: 2;
   padding-top: 5em;
   padding-bottom: 5em;
   text-align: center;
@@ -120,6 +121,7 @@ export default {
   overflow: hidden;
   font-size: 1.75em;
   font-weight: bold;
+  z-index: 1;
 }
 
 .candidates {
