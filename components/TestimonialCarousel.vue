@@ -21,29 +21,39 @@ export default {
       },
       testimonials: [
         {
-          name: 'John H.',
-          title: 'Former Senior Engineer, Google',
-          testimonial: 'Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatso'
+          name: '',
+          title: '',
+          testimonial: 'I was intimidated by the search process in a new industry I was not familiar with, but working with Greg made everything easy and painless.'
         },
         {
-          name: 'James S.',
-          title: 'Former Senior Engineer, Google',
-          testimonial: 'Veggies es bonus vobis, proinde vos postulo.'
+          name: '',
+          title: '',
+          testimonial: 'Greg interacted with employers on my behalf and facilitated the process to ensure that the hiring process was smooth and with a quick turn around.'
         },
         {
-          name: 'Sarah K.',
-          title: 'Former Senior Engineer, Google',
-          testimonial: 'Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatso'
+          name: '',
+          title: '',
+          testimonial: 'Throughout the interview and placement process Greg was both responsive and involved, and made the search and eventual transition quick, directed and efficient.'
         },
         {
-          name: 'John H.',
-          title: 'Former Senior Engineer, Google',
-          testimonial: 'Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatso'
+          name: '',
+          title: '',
+          testimonial: 'Greg recently placed me in a new job that matched both my interests and skills very well.'
         },
         {
-          name: 'John H.',
-          title: 'Former Senior Engineer, Google',
-          testimonial: 'Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatso'
+          name: '',
+          title: '',
+          testimonial: 'Greg worked hard to make sure that I found the right place for myself, I highly recommend Greg.'
+        },
+        {
+          name: '',
+          title: '',
+          testimonial: 'Greg responded to all questions immediately, and helped arrange my onsite interviews and traveling.'
+        },
+        {
+          name: '',
+          title: '',
+          testimonial: 'Working with Greg has been an immensely rewarding experience.'
         }
       ]
     }
