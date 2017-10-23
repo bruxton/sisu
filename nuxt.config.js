@@ -46,5 +46,8 @@ module.exports = {
   },
   css: [
     '@/assets/css/main.css'
+  ],
+  plugins: [
+    { src: '~plugins/ga.js', ssr: false }
   ]
 }
