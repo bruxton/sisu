@@ -12,6 +12,18 @@ module.exports = {
         name: 'description',
         content: 'Connecting devoted recruits with leading companies to advance the technology industry.'
       },
+      { property: 'og:url', content: 'http://sisutechpartners.com' },
+      { property: 'og:site_name', content: 'SISU' },
+      { property: 'og:type', content: 'website' },
+      {
+        property: 'og:title',
+        content: 'SISU Tech Partners | A premier tech recruiting firm. Building teams that become the forefront of innovation'
+      },
+      {
+        property: 'og:description',
+        content: 'Connecting devoted recruits with leading companies to advance the technology industry.'
+      },
+      { property: 'og:image', content: 'http://sisutechpartners.com/og-image.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v2' },
