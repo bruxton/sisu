@@ -94,5 +94,7 @@ export default {
 .linkedin {
   position: absolute;
   bottom: 1.25em;
+  left: 50%;
+  transform: translateX(-50%);
 }
 </style>
