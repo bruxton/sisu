@@ -45,7 +45,6 @@ export default {
 }
 </script>
 
-
 <style scoped>
 .cover {
   height: 100vh;
