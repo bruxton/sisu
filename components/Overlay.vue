@@ -6,7 +6,7 @@
       class="overlay__email" href="mailto:info@sisutechpartners.com">info@sisutechpartners.com</a>
       <a 
         v-show="bottom"
-        href="https://www.linkedin.com/company/223536/"
+        href="https://www.linkedin.com/company/sisu-tech-partners/"
         title="Link to our LinkedIn page">
         <linked-in class="linkedin"/>
       </a>
