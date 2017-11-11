@@ -4,10 +4,13 @@
       <div class="tagline">
         <div class="container">
           <p class="tagline__copy">
-            We love our clients, but quite frankly we just love our candidates much more. We promise to create a remarkable experience for all of our candidates while maintaining an uncompromising commitment to quality.
+            The people’s people. It’s simple. SISU is upfront, honest, and knows what matters most.
           </p>
           <p class="tagline__copy">
-            These philosophies are not just rhetoric. Just ask anyone at our company. Our core values are not words on the wall or pretty phrases on a web page, they are the very soul of our company, and this is who we are.
+            We value each relationship and are committed to being direct and transparent with every person we meet. By putting people first, we develop lasting relationships with candidates and clients who want to do more than just fit in. At SISU we build partnerships that stand out.
+          </p>
+          <p class="tagline__copy">
+            We get the job of finding jobs done.
           </p>
         </div>
       </div>
@@ -20,9 +23,7 @@
               <div class="rellax-candidates" data-rellax-percentage=".5" data-rellax-speed="5">
                 <div class="container">
                   <h2 class="clients-candidates__header">Candidates</h2>
-                  <p>Finding the right company and job is incredibly stressful....that’s where we come in with industry knowledge to find you the right home. Your SISU personal recruiter will make each interaction relevant to your needs. We focus on your interests, hobbies, passions, and life-goals.</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.</p>
-                  <p style="margin-bottom: 0">Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>The three W’s—where you’ve been, what you want and where you’re going—guide everything we do. We take your experience, goals and passions as seriously as we take ours. Done properly, recruiting can be purposeful and enjoyable, and that’s the experience we strive to provide our candidates. It’s more than just harmonizing skill sets with opportunities. It’s about creating a lasting partnership where everyone wins. If you’re looking to build and cultivate a relationship, we’re your people.</p>
                 </div>
               </div>
             </div>
@@ -33,9 +34,7 @@
               <div class="rellax-clients" data-rellax-percentage=".5" data-rellax-speed="5">
                 <div class="container">
                   <h2 class="clients-candidates__header">Clients</h2>
-                  <p>Gifted talent will always have a wealth of compelling opportunities—we work behind the scenes and present you with the most curated talent. Using our communication and honesty first approach, we successfully pair great engineers with your culture.</p>
-                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Cras sagittis finibus massa quis pretium. Aliquam maximus dui in lacus commodo, eget facilisis nunc ultricies.</p>
+                  <p>SISU was founded on a human-centered approach to recruiting. This means focusing on the relationships that matter most and only delivering the best candidates for your opportunity. Just because the job your engineers do can be complex doesn’t mean hiring has to be. We work hard to recruit candidates that fit into your company’s culture—working through hard challenges with you, being productive, and enjoying the rewarding times together. We are in it for the long haul, and our candidates are too.</p>
               </div>
             </div>
           </div>
@@ -99,14 +98,21 @@ export default {
 
 .tagline {
   background-color: #fff;
-  font-size: 2.1875em;
+  font-size: 1.75em;
   font-weight: bold;
-  padding-top: 3.75em;
-  padding-bottom: 2.5em;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
   position: relative;
   z-index: 1;
 }
 
+@media (min-width: 800px) {
+  .tagline {
+    font-size: 2.1875em; 
+    padding-top: 3.75em;
+    padding-bottom: 2.5em;
+  }
+}
 .carousel {
   background-color: #EFEFEF;
   position: relative;
@@ -123,6 +129,7 @@ export default {
   font-size: 1.25em;
   font-weight: bold;
   padding-top: 3.75em;
+  padding-bottom: 3.75em;
   z-index: 1;
 }
 
@@ -130,6 +137,7 @@ export default {
   .clients-candidates {
     font-size: 1.75em;
     padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -177,7 +185,6 @@ export default {
   position: relative;
   z-index: 20;
   background-color: white;
-  margin-bottom: -10%;
 }
 
 .clients > div {
@@ -187,6 +194,7 @@ export default {
 @media (min-width: 1024px) {
   .clients {
     border-top: 13px solid #000;
+    margin-bottom: -10%;
     overflow: hidden;
     transform: skewY(-28deg);
   }
