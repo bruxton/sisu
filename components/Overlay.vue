@@ -1,25 +1,17 @@
 <template>
   <div class="cover">
     <h1 class="title">SISU</h1>
-    <a 
-      v-show="bottom"
-      class="overlay__email" href="mailto:info@sisutechpartners.com">info@sisutechpartners.com</a>
-      <a 
-        v-show="bottom"
-        href="https://www.linkedin.com/company/sisu-tech-partners/"
-        title="Link to our LinkedIn page">
-        <linked-in class="linkedin"/>
-      </a>
-      </div>
+    <app-footer v-show="bottom"></app-footer>
   </div>
 </template>
 
 <script>
 import LinkedIn from '~/assets/linkedin.svg'
+import AppFooter from '~/components/AppFooter.vue'
 
 export default {
   components: {
-    LinkedIn
+    LinkedIn, AppFooter
   },
   data () {
     return {
@@ -75,25 +67,5 @@ export default {
     letter-spacing: 40px;
     text-indent: 40px;
   }
-}
-
-.overlay__email {
-  color: #FFFFFF;
-  font-size: .8125em;
-  margin-top: 0.75em;
-  text-decoration: underline;
-}
-
-.overlay__email:hover, 
-.overly__email:focus {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.linkedin {
-  position: absolute;
-  bottom: 1.25em;
-  left: 50%;
-  transform: translateX(-50%);
 }
 </style>
