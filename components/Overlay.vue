@@ -1,6 +1,8 @@
 <template>
-  <div class="cover">
-    <h1 class="title">SISU</h1>
+  <div class="cover" :class="{ atBottom: bottom }">
+    <h1 
+    v-show="!bottom"
+    class="title">SISU</h1>
     <app-footer v-show="bottom"></app-footer>
   </div>
 </template>
@@ -37,7 +39,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .cover {
   height: 100vh;
   background-color: #000000;
@@ -50,6 +52,13 @@ export default {
   left: 0;
   width: 100%;
   z-index: 0;
+
+  &.atBottom {
+    @media (min-width: 640px) {
+      align-items: flex-start;
+    }
+  }
+
 }
 
 .title {

@@ -1,12 +1,11 @@
 <template>
   <footer class="footer">
-    <a 
-      class="overlay__email" href="mailto:info@sisutechpartners.com">info@sisutechpartners.com</a>
-    <a 
-      href="https://www.linkedin.com/company/sisu-tech-partners/"
-      title="Link to our LinkedIn page">
-      <linked-in class="linkedin"/>
+    <a href="https://www.linkedin.com/company/sisu-tech-partners/" title="Link to our LinkedIn page" class="linkedin">
+      <linked-in />
     </a>
+    <a class="overlay__email" href="mailto:info@sisutechpartners.com">info@sisutechpartners.com</a>
+    <a href="tel:3106667570">+1 310.666.7570</a>
+    <p class="legal">&copy; {{ currentYear }} SISU Tech Partners</p>
   </footer>
 </template>
 
@@ -16,29 +15,78 @@ import LinkedIn from '~/assets/linkedin.svg'
 export default {
   components: {
     LinkedIn
+  },
+  computed: {
+    currentYear () {
+      const date = new Date()
+      return date.getFullYear()
+    }
   }
 }
 </script>
 
-<style scoped>
-.overlay__email {
-  color: #FFFFFF;
-  font-size: .8125em;
-  margin-top: 0.75em;
-  text-decoration: underline;
-}
+<style lang="scss" scoped>
 
-.overlay__email:hover, 
-.overly__email:focus {
-  cursor: pointer;
-  text-decoration: none;
+$footerBp: '640px';
+
+.footer {
+  align-items: center;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: .875em;
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $footerBp) {
+    flex-direction: row;
+    margin-top: auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 1.25em;
+  }
+
+  > * {
+    margin-bottom: 1.25em;
+
+    @media (min-width: $footerBp) {
+      margin-bottom: 0;
+      margin-right: 2.5em;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 }
 
 .linkedin {
-  position: absolute;
-  bottom: 1.25em;
-  left: 50%;
-  transform: translateX(-50%);
+  @media (min-width: $footerBp) {
+    order: 2;
+  }
+}
+
+.legal {
+  color: #AAA;
+  font-size: .75em;
+  font-weight: bold;
+  margin-bottom: 0;
+
+   @media (min-width: $footerBp) {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: normal;
+    order: -1;
+  }
 }
 </style>
 
