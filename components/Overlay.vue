@@ -26,13 +26,6 @@ export default {
       bottom: false
     }
   },
-  watch: {
-    bottom (bottom) {
-      if (bottom) {
-        console.log(`Bottom is visible`)
-      }
-    }
-  },
   created () {
     if (process.browser) {
       window.addEventListener('scroll', () => {
