@@ -26,8 +26,8 @@ export default {
 
   @media (min-width: 800px) {
     .icon-triangle {
-      width: 235px;
-      height: 125px;
+      width: 180px;
+      height: 95px;
     }
   }
 
