@@ -42,20 +42,20 @@
       </div>
     </main>
     <overlay/>
-    <logo :style="topTriangleStyles"/>
-    <logo :style="bottomTriangleStyles"/>
+    <triangle :style="topTriangleStyles"/>
+    <triangle :style="bottomTriangleStyles"/>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Triangle from '~/components/Triangle.vue'
 import Overlay from '~/components/Overlay.vue'
 import Rellax from 'rellax'
 import TestimonialCarousel from '~/components/TestimonialCarousel.vue'
 
 export default {
   components: {
-    Logo, TestimonialCarousel, Overlay
+    Triangle, TestimonialCarousel, Overlay
   },
   data () {
     return {

@@ -2,20 +2,20 @@
   <div class="cover" :class="{ atBottom: bottom }">
     <h1 
     v-show="!bottom"
-    class="title">SISU</h1>
+    class="title"><logo/></h1>
     <contact-form v-show="bottom"></contact-form>
     <app-footer v-show="bottom"></app-footer>
   </div>
 </template>
 
 <script>
-import LinkedIn from '~/assets/linkedin.svg'
+import Logo from '~/assets/logo.svg'
 import AppFooter from '~/components/AppFooter.vue'
 import ContactForm from '~/components/ContactForm.vue'
 
 export default {
   components: {
-    LinkedIn, AppFooter, ContactForm
+    AppFooter, ContactForm, Logo
   },
   data () {
     return {
@@ -64,19 +64,15 @@ export default {
 }
 
 .title {
-  color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 3em;
-  letter-spacing: .6875em;
-  text-indent: .6875em;
-}
+  margin: 0 1.25em;
 
-@media (min-width: 500px) {
-  .title {
-    font-size: 5em;
-    letter-spacing: 40px;
-    text-indent: 40px;
+  @media (max-width: 640px) {
+    max-width: 180px;
+  }
+
+  svg {
+    height: auto;
+    max-width: 100%;
   }
 }
 </style>
