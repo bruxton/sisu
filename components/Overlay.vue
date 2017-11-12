@@ -42,6 +42,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+$fullOverlay: 640px;
+
 .cover {
   height: 100vh;
   background-color: #000000;
@@ -55,7 +58,15 @@ export default {
   width: 100%;
   z-index: 0;
 
+
+
   &.atBottom {
+    // @media (max-width: 640px) {
+    //   position: static;
+    //   height: auto;
+    // }
+    // position: static;
+    // height: auto;
     @media (min-width: 640px) {
       align-items: flex-start;
     }

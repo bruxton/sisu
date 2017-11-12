@@ -35,7 +35,7 @@ $footerBp: '640px';
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size: .875em;
+  font-size: .75em;
   max-width: 1280px;
   padding-left: 20px;
   padding-right: 20px;
@@ -43,6 +43,7 @@ $footerBp: '640px';
   @media (min-width: $footerBp) {
     bottom: 0;
     flex-direction: row;
+    font-size: .875em;
     left: 0;
     margin-top: auto;
     padding-left: 80px;
@@ -75,6 +76,15 @@ $footerBp: '640px';
 .linkedin {
   @media (min-width: $footerBp) {
     order: 2;
+  }
+  svg {
+    height: 16px;
+    width: 16px;
+
+    @media (min-width: $footerBp) {
+      height: 24px;
+      width: 24px;
+    }
   }
 }
 

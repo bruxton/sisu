@@ -8,19 +8,19 @@
       @submit.prevent="submitForm">
       <label for="name">
         <div class="contact__label">Name</div>
-        <input type="text" name="name" v-model="name" required/>
+        <input type="text" name="name" v-model="name" placeholder="Name" required/>
       </label>
       <label for="_replyto">
         <div class="contact__label">Email</div>
-        <input type="email" name="_replyto" v-model="email" required/>
+        <input type="email" name="_replyto" v-model="email" required placeholder="Email"/>
       </label>
       <label for="phone">
         <div class="contact__label">Phone</div>
-        <input type="tel" name="phone" v-model="phone"/>
+        <input type="tel" name="phone" v-model="phone" placeholder="Phone"/>
       </label>
       <label class="is-textarea" for="messaage">
         <div class="contact__label">Message</div>
-        <textarea name="message" cols="30" rows="5" v-model="message" required></textarea>
+        <textarea name="message" cols="30" rows="5" v-model="message" required placeholder="Your Message"></textarea>
       </label>
       <input type="text" name="_gotcha" style="display:none"/>
       <button class="button hollow">{{ submitButton }}</button>
@@ -122,17 +122,25 @@ $fullForm: 700px;
 .contact {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.25em;
 
   @media (min-width: $fullForm) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   label:not(.is-textarea) {
     @media (min-width: $fullForm) {
       flex: 0 1 auto;
       width: calc(33.3333% - 1.25em);
+    }
+  }
+
+  .button {
+    @media (max-width: $fullForm) {
+      font-size: 0.875em;
     }
   }
 }
@@ -144,12 +152,22 @@ label {
 }
 
 .contact__label {
+  display: none;
   margin-bottom: .625em;
+
+  @media (min-width: $fullForm) {
+    display: inline-block;
+  }
 }
 
 input, 
 textarea {
   width: 100%;
+
+  @media (max-width: $fullForm) {
+    padding-bottom: .25em;
+    padding-top: .25em;
+  }
 }
 </style>
 
