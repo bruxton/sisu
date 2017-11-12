@@ -80,7 +80,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .site-content {
   position: relative;
   min-height: 100vh;
@@ -167,17 +167,19 @@ export default {
   position: relative;
   margin-bottom: 3.75em;
   overflow: hidden;
-}
 
-@media (min-width: 1024px) {
-  .candidates {
+  @media (min-width: 1024px) {
     margin-bottom: 0;
   }
-}
 
-@media (min-width: 1024px) {
-  .candidates .container {
-    padding-right: 25%;
+  .container {
+    @media (min-width: 1024px) {
+      padding-right: 25%;
+    }
+
+    @media (min-width: 1400px) {
+      padding-right: 10%;
+    }
   }
 }
 
@@ -185,6 +187,17 @@ export default {
   position: relative;
   z-index: 20;
   background-color: white;
+
+  .container {
+    @media (min-width: 1024px) {
+      padding-left: 25%;
+      position: relative;
+    }
+
+    @media (min-width: 1400px) {
+      padding-left: 10%;
+    }
+  }
 }
 
 .clients > div {
@@ -202,11 +215,6 @@ export default {
   .clients > div {
     margin-top: 0;
     transform: skewY(28deg);
-  }
-
-  .clients .container {
-    position: relative;
-    padding-left: 25%;
   }
 
   .clients .container p:last-of-type {
