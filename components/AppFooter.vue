@@ -41,10 +41,13 @@ $footerBp: '640px';
   padding-right: 20px;
 
   @media (min-width: $footerBp) {
+    bottom: 0;
     flex-direction: row;
+    left: 0;
     margin-top: auto;
     padding-left: 80px;
     padding-right: 80px;
+    position: absolute;
     margin-bottom: 1.25em;
   }
 

@@ -1,3 +1,5 @@
+$global-radius: 4px;
+
 h1,
 h2,
 h3,
@@ -28,11 +30,11 @@ p {
 input,
 textarea {
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: $global-radius;
   display: inline-block;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1em;
-  padding: .75em;
+  padding: .625em .75em;
 }
 
 label {
@@ -44,7 +46,7 @@ input[type="submit"],
 .button {
   background-color: #000;
   border: 1px solid #000;
-  border-radius: 3px;
+  border-radius: $global-radius;
   color: #FFF;
   display: inline-block;
   font-size: 1.25em;
