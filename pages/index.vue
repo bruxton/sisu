@@ -104,15 +104,14 @@ export default {
   padding-bottom: 1.25em;
   position: relative;
   z-index: 1;
-}
 
-@media (min-width: 800px) {
-  .tagline {
+  @media (min-width: 800px) {
     font-size: 2.1875em; 
     padding-top: 3.75em;
     padding-bottom: 2.5em;
   }
 }
+
 .carousel {
   background-color: #EFEFEF;
   position: relative;
@@ -131,10 +130,8 @@ export default {
   padding-top: 3.75em;
   padding-bottom: 3.75em;
   z-index: 1;
-}
 
-@media (min-width: 800px) {
-  .clients-candidates {
+  @media (min-width: 800px) {
     font-size: 1.75em;
     padding-top: 0;
     padding-bottom: 0;
@@ -155,10 +152,8 @@ export default {
   margin-left: auto;
   margin-right: auto;
   transform: skewY(-28deg);
-}
 
-@media (min-width: 1024px) {
-  .clients-candidates__small-border {
+  @media (min-width: 1024px) {
     display: none;
   }
 }
@@ -188,6 +183,22 @@ export default {
   z-index: 20;
   background-color: white;
 
+  @media (min-width: 1024px) {
+    border-top: 13px solid #000;
+    margin-bottom: -10%;
+    overflow: hidden;
+    transform: skewY(-28deg);
+  }
+
+  > div {
+    margin-top: 70px;
+
+    @media (min-width: 1024px) {
+      margin-top: 0;
+      transform: skewY(28deg);
+    }
+  }
+
   .container {
     @media (min-width: 1024px) {
       padding-left: 25%;
@@ -197,28 +208,12 @@ export default {
     @media (min-width: 1400px) {
       padding-left: 10%;
     }
-  }
-}
 
-.clients > div {
-  margin-top: 70px;
-}
-
-@media (min-width: 1024px) {
-  .clients {
-    border-top: 13px solid #000;
-    margin-bottom: -10%;
-    overflow: hidden;
-    transform: skewY(-28deg);
-  }
-
-  .clients > div {
-    margin-top: 0;
-    transform: skewY(28deg);
-  }
-
-  .clients .container p:last-of-type {
-    padding-bottom: 45%;
+    p:last-of-type {
+      @media (min-width: 1024px) {
+        padding-bottom: 45%;
+      }
+    }
   }
 }
 
