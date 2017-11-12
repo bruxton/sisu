@@ -1,0 +1,101 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: .5em;
+  margin-top: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  color: #999999;
+}
+
+p {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+/* forms */
+input,
+textarea {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1em;
+  padding: .75em;
+}
+
+label {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+input[type="submit"],
+.button {
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #FFF;
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: .625em 1.25em;
+  transition: all 250ms;
+
+  &:hover, 
+  &:focus {
+    background-color: #FFF;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  &.hollow {
+    background-color: transparent;
+    border-color: #FFF;
+
+    &:hover, 
+    &:focus {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+}
+
+/* white circles */
+
+.flickity-page-dots {
+  bottom: -50px;
+}
+
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid black;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: black;
+}
+
+/* container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 870px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}

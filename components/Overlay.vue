@@ -3,6 +3,7 @@
     <h1 
     v-show="!bottom"
     class="title">SISU</h1>
+    <contact-form v-show="bottom"></contact-form>
     <app-footer v-show="bottom"></app-footer>
   </div>
 </template>
@@ -10,10 +11,11 @@
 <script>
 import LinkedIn from '~/assets/linkedin.svg'
 import AppFooter from '~/components/AppFooter.vue'
+import ContactForm from '~/components/ContactForm.vue'
 
 export default {
   components: {
-    LinkedIn, AppFooter
+    LinkedIn, AppFooter, ContactForm
   },
   data () {
     return {

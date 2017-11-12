@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^4.4.0",
     "flickity": "^2.0.10",
     "nuxt": "^1.0.0-rc11",
     "rellax": "^1.3.0"

@@ -61,9 +61,12 @@ module.exports = {
     vendor: ['rellax', 'flickity']
   },
   css: [
-    '@/assets/css/main.css'
+    '@/assets/css/main.scss'
   ],
   plugins: [
     { src: '~plugins/ga.js', ssr: false }
+  ],
+  modules: [
+    '@nuxtjs/axios'
   ]
 }
