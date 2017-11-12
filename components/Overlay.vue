@@ -58,20 +58,11 @@ $fullOverlay: 640px;
   width: 100%;
   z-index: 0;
 
-
-
   &.atBottom {
-    // @media (max-width: 640px) {
-    //   position: static;
-    //   height: auto;
-    // }
-    // position: static;
-    // height: auto;
     @media (min-width: 640px) {
       align-items: flex-start;
     }
   }
-
 }
 
 .title {
