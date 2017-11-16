@@ -61,7 +61,7 @@ export default {
         message: this.message
       }
       try {
-        const response = await this.$axios.$post('https://formspree.io/jacob.arriola@gmail.com', data)
+        const response = await this.$axios.$post('https://formspree.io/info@sisutechpartners.com', data)
         if (response.success === 'email sent') {
           this.resetFormData()
           this.showSuccessMessage = true
