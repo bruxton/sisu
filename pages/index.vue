@@ -23,7 +23,9 @@
               <div class="rellax-candidates" data-rellax-percentage=".5" data-rellax-speed="5">
                 <div class="container">
                   <h2 class="clients-candidates__header">Candidates</h2>
-                  <p>The three W’s—where you’ve been, what you want and where you’re going—guide everything we do. We take your experience, goals and passions as seriously as we take ours. Done properly, recruiting can be purposeful and enjoyable, and that’s the experience we strive to provide our candidates. It’s more than just harmonizing skill sets with opportunities. It’s about creating a lasting partnership where everyone wins. If you’re looking to build and cultivate a relationship, we’re your people.</p>
+                  <p>The three W’s—where you’ve been, what you want and where you’re going—guide everything we do. We take your experience, goals and passions as seriously as we take ours.</p>
+                  <p>Done properly, recruiting can be purposeful and enjoyable, and that’s the experience we strive to provide our candidates. It’s more than just harmonizing skill sets with opportunities. It’s about creating a lasting partnership where everyone wins.</p>
+                  <p>If you’re looking to build and cultivate a relationship, we’re your people.</p>
                 </div>
               </div>
             </div>
@@ -34,7 +36,9 @@
               <div class="rellax-clients" data-rellax-percentage=".5" data-rellax-speed="5">
                 <div class="container">
                   <h2 class="clients-candidates__header">Clients</h2>
-                  <p>SISU was founded on a human-centered approach to recruiting. This means focusing on the relationships that matter most and only delivering the best candidates for your opportunity. Just because the job your engineers do can be complex doesn’t mean hiring has to be. We work hard to recruit candidates that fit into your company’s culture—working through hard challenges with you, being productive, and enjoying the rewarding times together. We are in it for the long haul, and our candidates are too.</p>
+                  <p>SISU was founded on a human-centered approach to recruiting. This means focusing on the relationships that matter most and only delivering the best candidates for your opportunity.</p>
+                  <p>Just because the job your engineers do can be complex doesn’t mean hiring has to be. We work hard to recruit candidates that fit into your company’s culture—working through hard challenges with you, being productive, and enjoying the rewarding times together.</p>
+                  <p>We are in it for the long haul, and our candidates are too.</p>
               </div>
             </div>
           </div>
@@ -132,7 +136,7 @@ export default {
   z-index: 1;
 
   @media (min-width: 800px) {
-    font-size: 1.75em;
+    font-size: 1.625em;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -142,6 +146,10 @@ export default {
   font-size: .8125em;
   margin-bottom: 1.25em;
   text-transform: uppercase;
+
+  @media (min-width: 640px) {
+    font-size: 1.125em;
+  }
 }
 
 .clients-candidates__small-border {
