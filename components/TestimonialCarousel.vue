@@ -23,37 +23,37 @@ export default {
         {
           name: '',
           title: '',
-          testimonial: 'I was intimidated by the search process in a new industry I was not familiar with, but working with Greg made everything easy and painless.'
+          testimonial: 'I was intimidated by the search process in a new industry I was not familiar with, but working with SISU made everything easy and painless.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'Greg interacted with employers on my behalf and facilitated the process to ensure that the hiring process was smooth and with a quick turn around.'
+          testimonial: 'SISU interacted with employers on my behalf and facilitated the process to ensure that the hiring process was smooth and with a quick turn around.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'Throughout the interview and placement process Greg was both responsive and involved, and made the search and eventual transition quick, directed and efficient.'
+          testimonial: 'Throughout the interview and placement process SISU was both responsive and involved, and made the search and eventual transition quick, directed and efficient.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'Greg recently placed me in a new job that matched both my interests and skills very well.'
+          testimonial: 'SISU recently placed me in a new job that matched both my interests and skills very well.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'Greg worked hard to make sure that I found the right place for myself, I highly recommend Greg.'
+          testimonial: 'SISU worked hard to make sure that I found the right place for myself, I highly recommend SISU.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'Greg responded to all questions immediately, and helped arrange my onsite interviews and traveling.'
+          testimonial: 'SISU responded to all questions immediately, and helped arrange my onsite interviews and traveling.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'Working with Greg has been an immensely rewarding experience.'
+          testimonial: 'Working with SISU has been an immensely rewarding experience.'
         }
       ]
     }
