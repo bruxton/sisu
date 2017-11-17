@@ -19,4 +19,16 @@ $ npm start
 $ npm run generate
 ```
 
+## Hosting
+[Surge](http://surge.sh/) handles hosting.
+
+## Deployment
+```bash
+# generate static files to /dist folder
+$ npm run generate
+
+# deploy to surge (from the root directory)
+$ surge dist/ http://sisutechpartners.com
+``` 
+
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
