@@ -63,7 +63,7 @@ export default {
         {
           name: '',
           title: '',
-          testimonial: 'Definitely went further than I've ever seen a recruiter go before.'
+          testimonial: 'Definitely went further than I have ever seen a recruiter go before.'
         },
         {
           name: '',
