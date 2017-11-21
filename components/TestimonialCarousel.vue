@@ -23,37 +23,62 @@ export default {
         {
           name: '',
           title: '',
-          testimonial: 'I was intimidated by the search process in a new industry I was not familiar with, but working with SISU made everything easy and painless.'
+          testimonial: 'I felt that there was a constant flow of information and communication in both directions...a huge thank you...'
         },
         {
           name: '',
           title: '',
-          testimonial: 'SISU interacted with employers on my behalf and facilitated the process to ensure that the hiring process was smooth and with a quick turn around.'
+          testimonial: '...interacted with employers on my behalf and facilitated the process to ensure that the hiring process was smooth and with a quick turn around.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'Throughout the interview and placement process SISU was both responsive and involved, and made the search and eventual transition quick, directed and efficient.'
+          testimonial: '...I was able to improve the initial offer significantly and made sure the offer covered or exceeded my previous benefits.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'SISU recently placed me in a new job that matched both my interests and skills very well.'
+          testimonial: '...both responsive and involved, and made the search and eventual transition quick, directed and efficient.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'SISU worked hard to make sure that I found the right place for myself, I highly recommend SISU.'
+          testimonial: '...gave very prompt and timely feedback after every interview and kept me updated at all times...often calling after hours or on weekends if needed.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'SISU responded to all questions immediately, and helped arrange my onsite interviews and traveling.'
+          testimonial: '...gave me as much information as possible, and was always responsive to emails/texts.'
         },
         {
           name: '',
           title: '',
-          testimonial: 'Working with SISU has been an immensely rewarding experience.'
+          testimonial: '...arranged for me up to interview with a few companies that fit my interests, and never gave my information to anyone without my permission.'
+        },
+        {
+          name: '',
+          title: '',
+          testimonial: '...responded to all questions immediately, and helped arrange my onsite interviews and travelling.'
+        },
+        {
+          name: '',
+          title: '',
+          testimonial: 'Definitely went further than I've ever seen a recruiter go before.'
+        },
+        {
+          name: '',
+          title: '',
+          testimonial: '...was instrumental in finding me a job which was a perfect fit in culture, skills, and goals.'
+        },
+        {
+          name: '',
+          title: '',
+          testimonial: '...introduced me to several HFT companies, and was instrumental in facilitating phone and onsite interviews.'
+        },
+        {
+          name: '',
+          title: '',
+          testimonial: 'Perhaps most importantly, it was important...that I found the right fit - I certainly appreciate that my goals were a priority...'
         }
       ]
     }
