@@ -14,9 +14,9 @@
           </p>
         </div>
       </div>
-      <!-- <div class="carousel">
+      <div class="carousel">
         <testimonial-carousel/>
-      </div> -->
+      </div>
       <div class="clients-candidates">
           <div class="candidates">
             <div>
