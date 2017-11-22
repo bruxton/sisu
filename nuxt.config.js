@@ -13,6 +13,8 @@ module.exports = {
         content: 'Connecting devoted recruits with leading companies to advance the technology industry.'
       },
       { property: 'og:url', content: 'http://sisutechpartners.com' },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
       { property: 'og:site_name', content: 'SISU' },
       { property: 'og:type', content: 'website' },
       {
