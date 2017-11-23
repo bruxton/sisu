@@ -66,9 +66,11 @@ module.exports = {
     '@/assets/css/main.scss'
   ],
   plugins: [
-    { src: '~plugins/ga.js', ssr: false }
   ],
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-110062677-1'
+    }]
   ]
 }
