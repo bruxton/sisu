@@ -53,7 +53,7 @@ $footerBp: '640px';
   }
 
   > * {
-    margin-bottom: 1.25em;
+    margin-bottom: .625em;
 
     @media (min-width: $footerBp) {
       margin-bottom: 0;

@@ -88,11 +88,13 @@ $fullForm: 700px;
 .form-header {
   color: #FFF;
   font-size: 1.375em;
+  margin-top: 1em;
   margin-bottom: 0.25em;
   text-transform: uppercase;
 
   @media (min-width: $fullForm) {
     font-size: 2.1875em;
+    margin-top: 0;
   }
 }
 
@@ -100,10 +102,11 @@ $fullForm: 700px;
   color: #FFF;
   font-size: .875em;
   font-weight: bold;
-  margin-bottom: 2.5em;
+  margin-bottom: 1.25em;
 
   @media (min-width: $fullForm) {
     font-size: 1.25em;
+    margin-bottom: 2.5em;
   }
 }
 
